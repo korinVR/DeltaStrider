@@ -5,12 +5,12 @@
 
 class OptionScene : public Scene {
 public:
-	OptionScene();
-	virtual void Update(SceneManager* manager);
-	virtual void Render(SceneManager* manager);
+    OptionScene();
+    virtual void Update(SceneManager* manager);
+    virtual void Render(SceneManager* manager);
 
 private:
-	int item;
+    int item;
 };
 
 #endif // ___OptionScene_h

@@ -5,13 +5,13 @@
 
 class Background : public GameObject {
 public:
-	Background(int no);
+    Background(int no);
 
-	virtual void Update();
-	virtual void Render();
+    virtual void Update();
+    virtual void Render();
 
 private:
-	int no;
+    int no;
 };
 
 #endif // ___Background_h

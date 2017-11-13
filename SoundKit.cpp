@@ -18,20 +18,20 @@ using namespace sslib2;
 #include "SoundKit.h"
 
 namespace {
-	CDirectSound directSound;
-	CStreamSoundBuffer bgmBuffer;
+    CDirectSound directSound;
+    CStreamSoundBuffer bgmBuffer;
 
-	const int SE_MAX = 256;
-	CStaticSoundBuffer seBuffer[SE_MAX];
+    const int SE_MAX = 256;
+    CStaticSoundBuffer seBuffer[SE_MAX];
 
-	bool playing;
+    bool playing;
 }
 
 void SoundKit::Initialize(HWND hWnd)
 {
-	if (!directSound.Create(hWnd)) {
-		throw runtime_error("");
-	}
+    if (!directSound.Create(hWnd)) {
+        throw runtime_error("");
+    }
 }
 
 void SoundKit::Cleanup()
@@ -40,44 +40,44 @@ void SoundKit::Cleanup()
 
 void SoundKit::PlayBGM(char* filename)
 {
-	char buf[256];
-	sprintf(buf, "sound/%s", filename);
+    char buf[256];
+    sprintf(buf, "sound/%s", filename);
 
-	shared_ptr<COggFileReader> reader(new COggFileReader());
-	if (!reader->Open(buf)) {
-		throw runtime_error("");
-	}
-	if (!bgmBuffer.Create(directSound, reader)) {
-		throw runtime_error("");
-	}
-	bgmBuffer.Play();
-	playing = true;
+    shared_ptr<COggFileReader> reader(new COggFileReader());
+    if (!reader->Open(buf)) {
+        throw runtime_error("");
+    }
+    if (!bgmBuffer.Create(directSound, reader)) {
+        throw runtime_error("");
+    }
+    bgmBuffer.Play();
+    playing = true;
 }
 
 void SoundKit::StopBGM()
 {
-	if (playing) {
-		playing = false;
-		bgmBuffer.Stop();
-	}
+    if (playing) {
+        playing = false;
+        bgmBuffer.Stop();
+    }
 }
 
 void SoundKit::LoadSE(int no, char* filename)
 {
-	char buf[256];
-	sprintf(buf, "sound/%s", filename);
+    char buf[256];
+    sprintf(buf, "sound/%s", filename);
 
-	shared_ptr<CPlainWavFileReader> reader(new CPlainWavFileReader());
-	if (!reader->Open(buf)) {
-		throw runtime_error("");
-	}
-	if (!seBuffer[no].Create(directSound, reader)) {
-		throw runtime_error("");
-	}
+    shared_ptr<CPlainWavFileReader> reader(new CPlainWavFileReader());
+    if (!reader->Open(buf)) {
+        throw runtime_error("");
+    }
+    if (!seBuffer[no].Create(directSound, reader)) {
+        throw runtime_error("");
+    }
 }
 
 void SoundKit::PlaySE(int no)
 {
-	seBuffer[no].Play();
+    seBuffer[no].Play();
 }
 

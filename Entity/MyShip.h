@@ -5,21 +5,21 @@
 
 class MyShip : public GameObject {
 public:
-	MyShip();
-	virtual ~MyShip();
+    MyShip();
+    virtual ~MyShip();
 
-	virtual void Update();
-	virtual void Render();
+    virtual void Update();
+    virtual void Render();
 
-	float GetRotation() const { return rotation; }
+    float GetRotation() const { return rotation; }
 
-	static const int STATE_ADVENT		= 0;
-	static const int STATE_NORMAL		= 1;
-	static const int STATE_DEAD			= 2;
-	static const int STATE_STAGE_CLEAR	= 3;
+    static const int STATE_ADVENT = 0;
+    static const int STATE_NORMAL = 1;
+    static const int STATE_DEAD = 2;
+    static const int STATE_STAGE_CLEAR = 3;
 
 protected:
-	float rotation;
+    float rotation;
 };
 
 float GetMyShipDistanceSquared();

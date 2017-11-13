@@ -8,14 +8,14 @@ using namespace std;
 
 class CollisionDetector {
 public:
-	static void Clear();
-	static void RegisterM(const CollisionBall& ball);
-	static void RegisterN(const CollisionBall& ball);
-	static void Detect();
+    static void Clear();
+    static void RegisterM(const CollisionBall& ball);
+    static void RegisterN(const CollisionBall& ball);
+    static void Detect();
 
 private:
-	static vector<CollisionBall> m;
-	static vector<CollisionBall> n;
+    static vector<CollisionBall> m;
+    static vector<CollisionBall> n;
 };
 
 #endif // ___CollisionDetector_h

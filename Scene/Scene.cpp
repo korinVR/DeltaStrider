@@ -11,7 +11,7 @@ Scene::~Scene()
 
 void Scene::ChangeScene(SceneManager* manager, Scene* scene)
 {
-	manager->ChangeScene(scene);
+    manager->ChangeScene(scene);
 }
 
 

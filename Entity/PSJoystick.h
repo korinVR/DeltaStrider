@@ -5,10 +5,10 @@
 
 class PSJoystick : public Entity {
 public:
-	PSJoystick();
+    PSJoystick();
 
-	virtual void Update();
-	virtual void Render();
+    virtual void Update();
+    virtual void Render();
 };
 
 #endif // ___PSJoystick_h

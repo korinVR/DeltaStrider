@@ -8,18 +8,18 @@ using namespace std;
 
 Texture::Texture(char* filename)
 {
-	if (FAILED(D3DXCreateTextureFromFile(d3dDevice, filename, &d3dTexture))) {
-		throw runtime_error("");
-	}
+    if (FAILED(D3DXCreateTextureFromFile(d3dDevice, filename, &d3dTexture))) {
+        throw runtime_error("");
+    }
     D3DSURFACE_DESC desc;
-	d3dTexture->GetLevelDesc(0, &desc);
-	width = desc.Width;
-	height = desc.Height;
+    d3dTexture->GetLevelDesc(0, &desc);
+    width = desc.Width;
+    height = desc.Height;
 }
 
 Texture::~Texture()
 {
-	SAFE_RELEASE(d3dTexture);
+    SAFE_RELEASE(d3dTexture);
 }
 
 

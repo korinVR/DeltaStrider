@@ -17,28 +17,28 @@ using namespace Sparkler;
 
 class GameObject : public Entity {
 public:
-	GameObject();
-	virtual ~GameObject();
+    GameObject();
+    virtual ~GameObject();
 
-	virtual void SetState(int state);
-	int GetState() const { return state; }
-	
-	virtual void Update();
-	virtual void Render();
-	
-	Vector GetPosition() const { return position; }
-	Vector GetVelocity() const { return velocity; }
-	
-	virtual void Collided();
+    virtual void SetState(int state);
+    int GetState() const { return state; }
+    
+    virtual void Update();
+    virtual void Render();
+    
+    Vector GetPosition() const { return position; }
+    Vector GetVelocity() const { return velocity; }
+    
+    virtual void Collided();
 
-	bool InSight() const;
-	
+    bool InSight() const;
+    
 protected:
-	Vector position;
-	Vector velocity;
-	
-	int state;
-	int count;
+    Vector position;
+    Vector velocity;
+    
+    int state;
+    int count;
 };
 
 #endif // ___GameObject_h

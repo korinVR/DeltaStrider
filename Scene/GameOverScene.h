@@ -5,12 +5,12 @@
 
 class GameOverScene : public Scene {
 public:
-	GameOverScene();
-	virtual void Update(SceneManager* manager);
-	virtual void Render(SceneManager* manager);
+    GameOverScene();
+    virtual void Update(SceneManager* manager);
+    virtual void Render(SceneManager* manager);
 
 private:
-	int count;
+    int count;
 };
 
 #endif // ___GameOverScene_h

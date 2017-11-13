@@ -5,27 +5,27 @@
 
 class EnemyStrider1 : public GameObject {
 public:
-	EnemyStrider1(Vector position);
+    EnemyStrider1(Vector position);
 
-	virtual void Update();
-	virtual void Render();
-	
-	virtual void Collided();
-	
+    virtual void Update();
+    virtual void Render();
+    
+    virtual void Collided();
+    
 private:
-	float acceleration;
-	float sensorPositionFactor;
-	float repulsiveForceFactor;
+    float acceleration;
+    float sensorPositionFactor;
+    float repulsiveForceFactor;
 
-	float rotation;
-	float rotationVelocity;
+    float rotation;
+    float rotationVelocity;
 
-	float roll;
-	float jetScale;
+    float roll;
+    float jetScale;
 
-	float shotSpeed;
-	int shotInterval;
-	int shotCount;
+    float shotSpeed;
+    int shotInterval;
+    int shotCount;
 };
 
 #endif // ___EnemyStrider1_h

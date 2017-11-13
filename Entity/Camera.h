@@ -5,10 +5,10 @@
 
 class Camera : public GameObject {
 public:
-	Camera();
+    Camera();
 
-	virtual void Update();
-	virtual void Render();
+    virtual void Update();
+    virtual void Render();
 };
 
 #endif // ___Camera_h

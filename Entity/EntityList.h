@@ -13,19 +13,19 @@ typedef shared_ptr<Entity> EntityPtr;
 
 class EntityList {
 public:
-	EntityList();
-	~EntityList();
+    EntityList();
+    ~EntityList();
 
-	void Clear();
-	void Append(Entity* entity);
-	void Insert(Entity* entity);
-	
-	void Update();
-	void Render();
-	int GetSize() const;
-	
+    void Clear();
+    void Append(Entity* entity);
+    void Insert(Entity* entity);
+    
+    void Update();
+    void Render();
+    int GetSize() const;
+    
 private:
-	list<EntityPtr> l;
+    list<EntityPtr> l;
 };
 
 #endif // ___EntityList_h

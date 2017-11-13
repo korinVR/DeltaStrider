@@ -3,37 +3,37 @@
 
 class InputKit {
 public:
-	static void Initialize();
-	static void Cleanup();
-	static void Reset();
-	static void Update();
+    static void Initialize();
+    static void Cleanup();
+    static void Reset();
+    static void Update();
 
-	static void LoadSequence(char* filename);
-	static void SaveSequence(char* filename);
-	static void Record();
-	static void Play();
+    static void LoadSequence(char* filename);
+    static void SaveSequence(char* filename);
+    static void Record();
+    static void Play();
 
-	static bool Playing();
-	static bool IsSequenceEnd();
-	
+    static bool Playing();
+    static bool IsSequenceEnd();
+    
 public:
-	static float stickX;
-	static float stickY;
+    static float stickX;
+    static float stickY;
 
-	static int stickUpCount;
-	static int stickDownCount;
-	static int stickLeftCount;
-	static int stickRightCount;
+    static int stickUpCount;
+    static int stickDownCount;
+    static int stickLeftCount;
+    static int stickRightCount;
 
-	static bool fireButtonPressed;
-	static bool statsButtonPressed;
-	static bool viewButtonPressed;
+    static bool fireButtonPressed;
+    static bool statsButtonPressed;
+    static bool viewButtonPressed;
 
-	static int fireButtonCount;
-	static int statsButtonCount;
-	static int viewButtonCount;
+    static int fireButtonCount;
+    static int statsButtonCount;
+    static int viewButtonCount;
 
-	static bool aborted;
+    static bool aborted;
 };
 
 #endif // ___InputKit_h

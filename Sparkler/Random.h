@@ -14,14 +14,14 @@ namespace Sparkler {
 
 class Random {
 public:
-	static void SetSeed(uint32_t);
+    static void SetSeed(uint32_t);
 
-	static int GetInt(int min, int max);
-	static float GetReal(float min, float max);
-	static float GetNormalDistributionReal(float mean, float sigma);
+    static int GetInt(int min, int max);
+    static float GetReal(float min, float max);
+    static float GetNormalDistributionReal(float mean, float sigma);
 
 private:
-	static mt19937 generator;
+    static mt19937 generator;
 };
 
 } // namespace Sparkler

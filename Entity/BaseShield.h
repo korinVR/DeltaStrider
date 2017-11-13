@@ -7,16 +7,16 @@ class Base;
 
 class BaseShield : public GameObject {
 public:
-	BaseShield(Vector position);
+    BaseShield(Vector position);
 
-	virtual void Update();
-	virtual void Render();
-	
-	virtual void Collided();
-	
+    virtual void Update();
+    virtual void Render();
+    
+    virtual void Collided();
+    
 private:
-	float rotation;
-	bool flash;
+    float rotation;
+    bool flash;
 };
 
 #endif // ___BaseShield_h

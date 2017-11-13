@@ -5,9 +5,9 @@
 
 class CreditScene : public Scene {
 public:
-	CreditScene();
-	virtual void Update(SceneManager* manager);
-	virtual void Render(SceneManager* manager);
+    CreditScene();
+    virtual void Update(SceneManager* manager);
+    virtual void Render(SceneManager* manager);
 
 private:
 };

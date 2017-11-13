@@ -3,17 +3,17 @@
 
 class Entity {
 public:
-	Entity();
-	virtual ~Entity();
+    Entity();
+    virtual ~Entity();
 
-	virtual void Update();
-	virtual void Render();
+    virtual void Update();
+    virtual void Render();
 
-	bool IsAlive() { return alive; }
-	void Die();
+    bool IsAlive() { return alive; }
+    void Die();
 
 private:
-	bool alive;
+    bool alive;
 };
 
 #endif // ___Entity_h

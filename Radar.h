@@ -6,10 +6,10 @@ using namespace Sparkler;
 
 class Radar {
 public:
-	static void RenderMyShipBlip(Vector position, float rotation);
-	static void RenderEnemyBlip(Vector position);
-	static void RenderTargetEnemyBlip(Vector position);
-	static void RenderRadar();
+    static void RenderMyShipBlip(Vector position, float rotation);
+    static void RenderEnemyBlip(Vector position);
+    static void RenderTargetEnemyBlip(Vector position);
+    static void RenderRadar();
 };
 
 #endif // ___Radar_h

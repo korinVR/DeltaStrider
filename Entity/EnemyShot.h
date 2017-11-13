@@ -5,13 +5,13 @@
 
 class EnemyShot : public GameObject {
 public:
-	EnemyShot(Vector position, Vector velocity);
+    EnemyShot(Vector position, Vector velocity);
 
-	virtual void Update();
-	virtual void Render();
-	
+    virtual void Update();
+    virtual void Render();
+    
 private:
-	float rotation;
+    float rotation;
 };
 
 #endif // ___EnemyShot_h

@@ -8,22 +8,22 @@ class Scene;
 
 class SceneManager : noncopyable {
 public:
-	SceneManager(Scene* scene);
-	virtual ~SceneManager();
-	void Update();
-	void Render();
+    SceneManager(Scene* scene);
+    virtual ~SceneManager();
+    void Update();
+    void Render();
 
-	int GetFrame() const;
-	
+    int GetFrame() const;
+    
 private:
-	void ChangeScene(Scene* scene);
-	
+    void ChangeScene(Scene* scene);
+    
 private:
-	Scene* scene;
-	Scene* nextScene;
-	int frame;
+    Scene* scene;
+    Scene* nextScene;
+    int frame;
 
-	friend class Scene;
+    friend class Scene;
 };
 
 #endif // ___SceneManager_h

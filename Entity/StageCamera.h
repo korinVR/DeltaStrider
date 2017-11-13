@@ -5,14 +5,14 @@
 
 class StageCamera : public Camera {
 public:
-	StageCamera();
+    StageCamera();
 
-	virtual void Update();
-	virtual void Render();
-	
+    virtual void Update();
+    virtual void Render();
+    
 private:
-	Vector offset;
-	float fov;
+    Vector offset;
+    float fov;
 };
 
 #endif // ___StageCamera_h

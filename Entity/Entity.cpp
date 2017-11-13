@@ -18,7 +18,7 @@ void Entity::Render()
 
 void Entity::Die()
 {
-	alive = false;
+    alive = false;
 }
 
 

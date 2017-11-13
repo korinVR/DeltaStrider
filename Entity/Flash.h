@@ -5,14 +5,14 @@
 
 class Flash : public GameObject {
 public:
-	Flash(Vector position);
+    Flash(Vector position);
 
-	virtual void Update();
-	virtual void Render();
-	
+    virtual void Update();
+    virtual void Render();
+    
 private:
-	float scale;
-	float alpha;
+    float scale;
+    float alpha;
 };
 
 #endif // ___Flash_h

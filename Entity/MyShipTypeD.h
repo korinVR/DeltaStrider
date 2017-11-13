@@ -5,23 +5,23 @@
 
 class MyShipTypeD : public MyShip {
 public:
-	MyShipTypeD();
+    MyShipTypeD();
 
-	virtual void Update();
-	virtual void Render();
+    virtual void Update();
+    virtual void Render();
 
-	virtual void SetState(int state);
+    virtual void SetState(int state);
 
-	virtual void Collided();
-	
+    virtual void Collided();
+    
 private:
-	float rotationVelocity;
+    float rotationVelocity;
 
-	float roll;
-	int rapidFireCount;
+    float roll;
+    int rapidFireCount;
 
-	float jetScale;
-	bool showMuzzleFlash;
+    float jetScale;
+    bool showMuzzleFlash;
 };
 
 #endif // ___MyShipTypeD_h

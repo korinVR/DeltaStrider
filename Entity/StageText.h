@@ -5,15 +5,15 @@
 
 class StageText : public GameObject {
 public:
-	StageText();
+    StageText();
 
-	virtual void Update();
-	virtual void Render();
-	
+    virtual void Update();
+    virtual void Render();
+    
 private:
-	int count;
-	int alpha;
-	float scale;
+    int count;
+    int alpha;
+    float scale;
 };
 
 #endif // ___StageText_h

@@ -5,15 +5,15 @@
 
 class MyShotTypeD : public GameObject {
 public:
-	MyShotTypeD(Vector position, Vector velocity, float rotation);
+    MyShotTypeD(Vector position, Vector velocity, float rotation);
 
-	virtual void Update();
-	virtual void Render();
+    virtual void Update();
+    virtual void Render();
 
-	virtual void Collided();
+    virtual void Collided();
 
 private:
-	float rotation;
+    float rotation;
 };
 
 #endif // ___MyShotTypeD_h

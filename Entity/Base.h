@@ -7,23 +7,23 @@ class BaseShield;
 
 class Base : public GameObject {
 public:
-	Base(Vector position);
+    Base(Vector position);
 
-	virtual void Update();
-	virtual void Render();
-	
-	virtual void Collided();
-	
+    virtual void Update();
+    virtual void Render();
+    
+    virtual void Collided();
+    
 private:
-	shared_ptr<BaseShield> shield;
-	int hp;
+    shared_ptr<BaseShield> shield;
+    int hp;
 
-	float rotation;
-	bool flash;
+    float rotation;
+    bool flash;
 
-	float shotSpeed;
-	int shotInterval;
-	int shotCount;
+    float shotSpeed;
+    int shotInterval;
+    int shotCount;
 };
 
 #endif // ___Base_h

@@ -5,13 +5,13 @@
 
 class SoundKit {
 public:
-	static void Initialize(HWND hWnd);
-	static void Cleanup();
+    static void Initialize(HWND hWnd);
+    static void Cleanup();
 
-	static void PlayBGM(char* filename);
-	static void StopBGM();
-	static void LoadSE(int no, char* filename);
-	static void PlaySE(int no);
+    static void PlayBGM(char* filename);
+    static void StopBGM();
+    static void LoadSE(int no, char* filename);
+    static void PlaySE(int no);
 };
 
 #endif // ___SoundKit_h

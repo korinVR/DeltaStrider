@@ -5,17 +5,17 @@
 
 class Explosion : public GameObject {
 public:
-	Explosion(Vector position, Vector velocity, float scale, float frmaeSpeed);
+    Explosion(Vector position, Vector velocity, float scale, float frmaeSpeed);
 
-	virtual void Update();
-	virtual void Render();
+    virtual void Update();
+    virtual void Render();
 
 private:
-	float scale;
-	float rotation;
-	
-	float frameSpeed;
-	float frame;
+    float scale;
+    float rotation;
+    
+    float frameSpeed;
+    float frame;
 };
 
 void CreateSmallExplosionSuite(Vector position, Vector velocity);

@@ -10,12 +10,12 @@ namespace Sparkler {
 
 class Log {
 private:
-	Log() {}
+    Log() {}
 
 public:
-	static void Open(const char* filename);
-	static void Close();
-	static void Printf(const char* format, ...);
+    static void Open(const char* filename);
+    static void Close();
+    static void Printf(const char* format, ...);
 };
 
 } // namespace Sparkler

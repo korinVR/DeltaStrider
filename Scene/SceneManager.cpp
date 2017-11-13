@@ -6,39 +6,39 @@ using namespace std;
 
 SceneManager::SceneManager(Scene* scene) : scene(scene), nextScene(0)
 {
-	frame = 0;
+    frame = 0;
 }
 
 SceneManager::~SceneManager()
 {
-	delete scene;
+    delete scene;
 }
 
 void SceneManager::Update()
 {
-	if (nextScene) {
-		delete scene;
-		scene = nextScene;
-		nextScene = 0;
-	}
-	frame++;
-	scene->Update(this);
+    if (nextScene) {
+        delete scene;
+        scene = nextScene;
+        nextScene = 0;
+    }
+    frame++;
+    scene->Update(this);
 }
 
 void SceneManager::Render()
 {
-	scene->Render(this);
+    scene->Render(this);
 }
 
 int SceneManager::GetFrame() const
 {
-	return frame;
+    return frame;
 }
 
 void SceneManager::ChangeScene(Scene* scene)
 {
-	assert(nextScene == 0);
-	nextScene = scene;
-	frame = 0;
+    assert(nextScene == 0);
+    nextScene = scene;
+    frame = 0;
 }
 

@@ -8,14 +8,13 @@ class GameObject;
 
 class CollisionBall {
 public:
-	CollisionBall(GameObject* object, Vector position, float radius) : 
-		object(object), position(position), radius(radius) {}
+    CollisionBall(GameObject* object, Vector position, float radius) : 
+        object(object), position(position), radius(radius) {}
 
-	GameObject* object;
-	Vector position;
-	float radius;
+    GameObject* object;
+    Vector position;
+    float radius;
 };
 
 #endif // ___CollisionBall_h
-
 

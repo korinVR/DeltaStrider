@@ -7,22 +7,22 @@
 
 class StageScene : public Scene {
 public:
-	StageScene();
-	virtual void Update(SceneManager* manager);
-	virtual void Render(SceneManager* manager);
+    StageScene();
+    virtual void Update(SceneManager* manager);
+    virtual void Render(SceneManager* manager);
 
-	void GotoNextStage();
+    void GotoNextStage();
 
 private:
-	EntityList huds;
-	EntityList backgrounds;
+    EntityList huds;
+    EntityList backgrounds;
 
-	float leftShipAngle;
+    float leftShipAngle;
 
-	bool stageCleared;
-	bool gotoNextStage;
+    bool stageCleared;
+    bool gotoNextStage;
 
-	int st;
+    int st;
 };
 
 #endif // ___StageScene_h
